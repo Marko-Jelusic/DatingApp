@@ -30,11 +30,12 @@ namespace API.Controllers
             _userRepository = userRepository;
         }
 
+        [Authorize(Roles = "Member, Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery]UserParams userParams)
         {
             var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
-            userParams.CurrentUsername = user.Username;
+            userParams.CurrentUsername = user.UserName;
 
             if(string.IsNullOrEmpty(userParams.Gender))
                 userParams.Gender = user.Gender == "male" ? "female" : "male";
@@ -47,8 +48,9 @@ namespace API.Controllers
         }
 
         // api/users/2 - Gets the user with ID of 2
+        [Authorize(Roles = "Member")]
         [HttpGet("{username}", Name = "GetUser")]
-        public async Task<ActionResult<MemberDto>>  GetUser(string username)
+        public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             return await _userRepository.GetMemberAsync(username);
         }
@@ -91,7 +93,7 @@ namespace API.Controllers
 
             if(await _userRepository.SaveAllAsync())
             {
-                return CreatedAtRoute("GetUser", new{username = user.Username}, _mapper.Map<PhotoDto>(photo));
+                return CreatedAtRoute("GetUser", new{username = user.UserName}, _mapper.Map<PhotoDto>(photo));
             }
                
             

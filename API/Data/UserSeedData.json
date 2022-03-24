@@ -1,6 +1,6 @@
 [
   {
-    "Username": "Debra",
+    "UserName": "Debra",
     "Gender": "female",
     "DateOfBirth": "1971-03-29",
     "KnownAs": "Debra",
@@ -19,7 +19,7 @@
     ]
   },
   {
-    "Username": "Lesa",
+    "UserName": "Lesa",
     "Gender": "female",
     "DateOfBirth": "1962-01-31",
     "KnownAs": "Lesa",
@@ -38,7 +38,7 @@
     ]
   },
   {
-    "Username": "Lara",
+    "UserName": "Lara",
     "Gender": "female",
     "DateOfBirth": "1951-07-21",
     "KnownAs": "Lara",
@@ -57,7 +57,7 @@
     ]
   },
   {
-    "Username": "Kayla",
+    "UserName": "Kayla",
     "Gender": "female",
     "DateOfBirth": "1984-12-14",
     "KnownAs": "Kayla",
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "Username": "Erika",
+    "UserName": "Erika",
     "Gender": "female",
     "DateOfBirth": "1987-03-26",
     "KnownAs": "Erika",
@@ -95,7 +95,7 @@
     ]
   },
   {
-    "Username": "Hinton",
+    "UserName": "Hinton",
     "Gender": "male",
     "DateOfBirth": "1959-07-08",
     "KnownAs": "Hinton",
@@ -114,7 +114,7 @@
     ]
   },
   {
-    "Username": "Ingram",
+    "UserName": "Ingram",
     "Gender": "male",
     "DateOfBirth": "1986-10-19",
     "KnownAs": "Ingram",
@@ -133,7 +133,7 @@
     ]
   },
   {
-    "Username": "Lott",
+    "UserName": "Lott",
     "Gender": "male",
     "DateOfBirth": "1962-12-20",
     "KnownAs": "Lott",
@@ -152,7 +152,7 @@
     ]
   },
   {
-    "Username": "Paul",
+    "UserName": "Paul",
     "Gender": "male",
     "DateOfBirth": "1977-04-06",
     "KnownAs": "Paul",
@@ -171,7 +171,7 @@
     ]
   },
   {
-    "Username": "Ashley",
+    "UserName": "Ashley",
     "Gender": "male",
     "DateOfBirth": "1956-08-27",
     "KnownAs": "Ashley",
