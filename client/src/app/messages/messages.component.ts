@@ -8,6 +8,7 @@ import { MessageService } from '../_services/message.service';
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css']
 })
+
 export class MessagesComponent implements OnInit {
   messages: Message[] = [];
   pagination: Pagination;
@@ -16,7 +17,7 @@ export class MessagesComponent implements OnInit {
   pageSize = 5;
   loading = false;
 
-  constructor(private messageService:MessageService) { }
+  constructor(private messageService: MessageService) { }
 
   ngOnInit(): void {
     this.loadMessages();
